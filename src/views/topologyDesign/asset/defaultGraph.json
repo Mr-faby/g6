@@ -1,0 +1,1305 @@
+{
+  "nodes": [
+    {
+      "controlId": "4477ff89318c41578f1c506dafb705a6",
+      "controlName": "中间件",
+      "attrData": [
+        {
+          "sysRecordIndex": 1,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributejiubalk3p920olu0y1ifo9g",
+          "attirbuteValueEg": "无",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944612",
+          "attributeInstanceValue": "dal12",
+          "attributeType": "1",
+          "attributeName": "实例编号",
+          "attributeDefaultValue": "dal12"
+        },
+        {
+          "sysRecordIndex": 2,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributefpko5i3i12u2e63ews2ojbc",
+          "attirbuteValueEg": "无",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944613",
+          "attributeInstanceValue": "中间件-ops",
+          "attributeType": "1",
+          "attributeName": "实例名称",
+          "attributeDefaultValue": "中间件-ops"
+        },
+        {
+          "sysRecordIndex": 3,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributexk3mcnnn66n9b6c124bn26r",
+          "attirbuteValueEg": "jdbc.url=jdbc:mysql://10.8.241.35:3306/sosmart_data?useUnicode=true&characterEncoding=UTF-8&socketTimeout=28000&failOverReadOnly=false&retriesAllDown=10000&secondsBeforeRetryMaster=30&queriesBeforeRetryMaster=50&useLocalSessionState=true",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944614",
+          "attributeInstanceValue": "jdbc.url=jdbc:mysql://10.8.241.35:3306/sosmart_data?useUnicode=true&characterEncoding=UTF-8&socketTimeout=28000&failOverReadOnly=false&retriesAllDown=10000&secondsBeforeRetryMaster=30&queriesBeforeRetryMaster=50&useLocalSessionState=true",
+          "attributeType": "1",
+          "attributeName": "jdbc.url",
+          "attributeDefaultValue": "jdbc.url=jdbc:mysql://10.8.241.35:3306/sosmart_data?useUnicode=true&characterEncoding=UTF-8&socketTimeout=28000&failOverReadOnly=false&retriesAllDown=10000&secondsBeforeRetryMaster=30&queriesBeforeRetryMaster=50&useLocalSessionState=true"
+        },
+        {
+          "sysRecordIndex": 4,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributefn1emcwezclu5rnw6ev42lc",
+          "attirbuteValueEg": "",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944615",
+          "attributeInstanceValue": "root",
+          "attributeType": "1",
+          "attributeName": "jdbc.username",
+          "attributeDefaultValue": "root"
+        },
+        {
+          "sysRecordIndex": 5,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attribute190k3xlyureq0hkk9aj34em",
+          "attirbuteValueEg": "",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944616",
+          "attributeInstanceValue": "password",
+          "attributeType": "1",
+          "attributeName": "jdbc.password",
+          "attributeDefaultValue": "password"
+        },
+        {
+          "sysRecordIndex": 6,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributejlu02shgz2npogrhdpyephx",
+          "attirbuteValueEg": "com.mysql.jdbc.Driver",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944617",
+          "attributeInstanceValue": "com.mysql.jdbc.Driver",
+          "attributeType": "1",
+          "attributeName": "jdbc.driver",
+          "attributeDefaultValue": "com.mysql.jdbc.Driver"
+        },
+        {
+          "sysRecordIndex": 7,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributes9s3ggo9l4da5xfhuta29jh",
+          "attirbuteValueEg": "8081",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944618",
+          "attributeInstanceValue": "8081",
+          "attributeType": "1",
+          "attributeName": "运行端口",
+          "attributeDefaultValue": "8081"
+        },
+        {
+          "sysRecordIndex": 8,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attribute9gk17dbglyxqtiu4nt9pdhk",
+          "attirbuteValueEg": "9091",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944619",
+          "attributeInstanceValue": "9091",
+          "attributeType": "1",
+          "attributeName": "监控端口",
+          "attributeDefaultValue": "9091"
+        },
+        {
+          "sysRecordIndex": 9,
+          "layerType": "middleWareLayer",
+          "attributeInstanceId": "attributek8taugf8ff9ezzdwa7fg086",
+          "attirbuteValueEg": "kafka、zk、dal 等",
+          "attributeRemark": "",
+          "controlName": "中间件",
+          "controlIcon": "icon-zhongjianjian",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "4477ff89318c41578f1c506dafb705a6",
+          "controlShape": "rect",
+          "attributeId": "0d5fddd1fbf04ea1ae11f61086a92327",
+          "attributeInstanceValue": "dal",
+          "attributeType": "1",
+          "attributeName": "中间件类型",
+          "attributeDefaultValue": "dal"
+        }
+      ],
+      "controlShape": "rect",
+      "controlIcon": "icon-zhongjianjian",
+      "layerType": "middleWareLayer",
+      "type": "custom-rect",
+      "label": "中间件",
+      "labelCfg": {
+        "style": {
+          "fill": "rgb(45, 204, 255)"
+        }
+      },
+      "style": {
+        "selected": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "highlight": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "dark": {
+          "opacity": 0.5
+        },
+        "stroke": "rgb(45, 204, 255)",
+        "fill": "rgb(7, 29, 51)",
+        "lineWidth": 2,
+        "height": 60,
+        "width": 150,
+        "shadowColor": "rgb(45, 204, 255)",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
+        "shadowBlur": 50,
+        "r": 30
+      },
+      "id": "rect8to7zmdo",
+      "x": 278.5625,
+      "y": 843.5,
+      "parentComboId": "middleWareLayer"
+    },
+    {
+      "controlId": "5af6b90f380f48179e09dc86ccaa2b17",
+      "controlName": "接口",
+      "attrData": [
+        {
+          "sysRecordIndex": 1,
+          "layerType": "businessLayer",
+          "attributeInstanceId": "attributeb7r6t8loguj9yzyium73dm2",
+          "attirbuteValueEg": "interfaceId",
+          "controlName": "接口",
+          "controlIcon": "icon-jiekouzhushou",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "5af6b90f380f48179e09dc86ccaa2b17",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944646",
+          "attributeInstanceValue": "63d638a32b1521000c1bafdb",
+          "attributeType": "1",
+          "attributeName": "实例编号",
+          "attributeDefaultValue": "63d638a32b1521000c1bafdb"
+        },
+        {
+          "sysRecordIndex": 2,
+          "layerType": "businessLayer",
+          "attributeInstanceId": "attributec3ycgdt76qlxx7v9i1n1bqe",
+          "attirbuteValueEg": "",
+          "controlName": "接口",
+          "controlIcon": "icon-jiekouzhushou",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "5af6b90f380f48179e09dc86ccaa2b17",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944647",
+          "attributeInstanceValue": "测试有效性检查",
+          "attributeType": "1",
+          "attributeName": "实例名称",
+          "attributeDefaultValue": "测试有效性检查"
+        },
+        {
+          "sysRecordIndex": 3,
+          "layerType": "businessLayer",
+          "attributeInstanceId": "attributehz7xjimvhqrbctjimgeroay",
+          "attirbuteValueEg": "",
+          "controlName": "接口",
+          "controlIcon": "icon-jiekouzhushou",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "5af6b90f380f48179e09dc86ccaa2b17",
+          "controlShape": "rect",
+          "attributeId": "c6898dc0401a45f9be2e84b6731adee9",
+          "attributeInstanceValue": "GET|POST|DELETE|PUT|HEAD|TRACE|OPTIONS",
+          "attributeType": "2",
+          "attributeName": "请求方法",
+          "attributeDefaultValue": "GET|POST|DELETE|PUT|HEAD|TRACE|OPTIONS"
+        }
+      ],
+      "controlShape": "rect",
+      "controlIcon": "icon-jiekouzhushou",
+      "layerType": "businessLayer",
+      "type": "custom-rect",
+      "label": "接口",
+      "labelCfg": {
+        "style": {
+          "fill": "rgb(45, 204, 255)"
+        }
+      },
+      "style": {
+        "selected": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "highlight": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "dark": {
+          "opacity": 0.5
+        },
+        "stroke": "rgb(45, 204, 255)",
+        "fill": "rgb(7, 29, 51)",
+        "lineWidth": 2,
+        "height": 60,
+        "width": 150,
+        "shadowColor": "rgb(45, 204, 255)",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
+        "shadowBlur": 50,
+        "r": 30
+      },
+      "id": "rect218ys935",
+      "x": 440.5625,
+      "y": 613.5,
+      "parentComboId": "businessLayer"
+    },
+    {
+      "controlId": "977c704702904de5a79fb2566fbc0239",
+      "controlName": "系统分组",
+      "attrData": [
+        {
+          "sysRecordIndex": 1,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeiepciw3cbue1g1ep4feg5hi",
+          "controlName": "系统分组",
+          "controlIcon": "icon-GroupList",
+          "remark": "",
+          "controlId": "977c704702904de5a79fb2566fbc0239",
+          "controlShape": "rect"
+        }
+      ],
+      "controlShape": "rect",
+      "controlIcon": "icon-GroupList",
+      "layerType": "physicalLayer",
+      "type": "custom-rect",
+      "label": "系统分组",
+      "labelCfg": {
+        "style": {
+          "fill": "rgb(45, 204, 255)"
+        }
+      },
+      "style": {
+        "selected": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "highlight": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "dark": {
+          "opacity": 0.5
+        },
+        "stroke": "rgb(45, 204, 255)",
+        "fill": "rgb(7, 29, 51)",
+        "lineWidth": 2,
+        "height": 60,
+        "width": 150,
+        "shadowColor": "rgb(45, 204, 255)",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
+        "shadowBlur": 50,
+        "r": 30
+      },
+      "id": "rectnkd1q4fp",
+      "x": 367.2291666666667,
+      "y": 14.114999999999952,
+      "parentComboId": "physicalLayer"
+    },
+    {
+      "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+      "controlName": "服务器",
+      "attrData": [
+        {
+          "sysRecordIndex": 1,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributerziwr52iuomkozt8s1ocpqh",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944632",
+          "attributeInstanceValue": "服务器02123",
+          "attributeType": "1",
+          "attributeName": "实例编号",
+          "attributeDefaultValue": "服务器02123"
+        },
+        {
+          "sysRecordIndex": 2,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributed1u60c6og3yyfusz90pfq59",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944633",
+          "attributeInstanceValue": "统销官测试服务器",
+          "attributeType": "1",
+          "attributeName": "实例名称",
+          "attributeDefaultValue": "统销官测试服务器"
+        },
+        {
+          "sysRecordIndex": 3,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeclx1bg10fznqdb3c2a3q56z",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944634",
+          "attributeInstanceValue": "22",
+          "attributeType": "1",
+          "attributeName": "运行端口",
+          "attributeDefaultValue": "22"
+        },
+        {
+          "sysRecordIndex": 4,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributewyi6czx5ldqxe1b0r204mh7",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944635",
+          "attributeInstanceValue": "统销官",
+          "attributeType": "1",
+          "attributeName": "所属系统",
+          "attributeDefaultValue": "统销官"
+        },
+        {
+          "sysRecordIndex": 5,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeghjibbofpt3w74ec8tg5ofz",
+          "attirbuteValueEg": "linux|windows",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944636",
+          "attributeInstanceValue": "linux",
+          "attributeType": "2",
+          "attributeName": "服务器类型",
+          "attributeDefaultValue": "linux"
+        },
+        {
+          "sysRecordIndex": 6,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attribute05mbctxvwuepxe7tkggi8on",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944637",
+          "attributeInstanceValue": "172.16.142.12",
+          "attributeType": "1",
+          "attributeName": "服务器IP",
+          "attributeDefaultValue": "172.16.142.12"
+        },
+        {
+          "sysRecordIndex": 7,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeemeuw0spdk5zvu5zpx7kyld",
+          "attirbuteValueEg": "正常|异常",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944638",
+          "attributeInstanceValue": "正常",
+          "attributeType": "2",
+          "attributeName": "状态",
+          "attributeDefaultValue": "正常"
+        },
+        {
+          "sysRecordIndex": 8,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributer0lth0twaawwp6ezm5fxoi1",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944639",
+          "attributeInstanceValue": "0.2",
+          "attributeType": "1",
+          "attributeName": "CPU使用率",
+          "attributeDefaultValue": "0.2"
+        },
+        {
+          "sysRecordIndex": 9,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributex3l2pxiz9tindenn6jm8q8d",
+          "attirbuteValueEg": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944640",
+          "attributeInstanceValue": "0.5",
+          "attributeType": "1",
+          "attributeName": "内存使用率",
+          "attributeDefaultValue": "0.5"
+        },
+        {
+          "sysRecordIndex": 10,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributey830nb7ya8hthgh5lntq9n6",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "110810e99a28463f87f31235350d9279",
+          "attributeInstanceValue": "",
+          "attributeType": "1",
+          "attributeName": "实例名称",
+          "attributeDefaultValue": ""
+        },
+        {
+          "sysRecordIndex": 11,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributen4xasilm4swg33bmvifpdxh",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "110810e99a28463f87f31235350d9280",
+          "attributeInstanceValue": "ac7363d6c7e04636ad05cbf81e57127a-01",
+          "attributeType": "1",
+          "attributeName": "实例编号",
+          "attributeDefaultValue": "ac7363d6c7e04636ad05cbf81e57127a-01"
+        },
+        {
+          "sysRecordIndex": 12,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeom7lv37wghyy77cvwwsgtzo",
+          "attirbuteValueEg": "单选",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "4a1406969732c3153ff9ae",
+          "attributeInstanceValue": "[正常]|异常",
+          "attributeType": "2",
+          "attributeName": "运行状态",
+          "attributeDefaultValue": "[正常]|异常"
+        },
+        {
+          "sysRecordIndex": 13,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributef3on172i1ngc7l0b43my75g",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "6a8a57ed4aa84e3c90fe2e20fb350746",
+          "attributeInstanceValue": "",
+          "attributeType": "1",
+          "attributeName": "IP",
+          "attributeDefaultValue": ""
+        },
+        {
+          "sysRecordIndex": 14,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeec6v5hapcknimm10r3y3zk6",
+          "attirbuteValueEg": "多选",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "checkbox",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "beb6a039d835488da92444f4e40cfc81",
+          "attributeInstanceValue": "[80]|81|[443]|22",
+          "attributeType": "3",
+          "attributeName": "端口",
+          "attributeDefaultValue": "[80]|81|[443]|22"
+        },
+        {
+          "sysRecordIndex": 15,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributenciqpjrgf6y8i3kkf8ryu4v",
+          "attirbuteValueEg": "请填写文本内容",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "textarea",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "c97fa3ec6fc342438b3c88a5624a3e29",
+          "attributeInstanceValue": "",
+          "attributeType": "5",
+          "attributeName": "描述",
+          "attributeDefaultValue": ""
+        },
+        {
+          "sysRecordIndex": 16,
+          "layerType": "physicalLayer",
+          "attributeInstanceId": "attributeg1zi7wd5vumkep1p2j71djl",
+          "attirbuteValueEg": "单选",
+          "attributeRemark": "",
+          "controlName": "服务器",
+          "controlIcon": "icon-server",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "ac7363d6c7e04636ad05cbf81e57127a",
+          "controlShape": "rect",
+          "attributeId": "f790033d77e0413eacdc5c41ae415357",
+          "attributeInstanceValue": "[正常]|异常",
+          "attributeType": "2",
+          "attributeName": "运行状态",
+          "attributeDefaultValue": "[正常]|异常"
+        }
+      ],
+      "controlShape": "rect",
+      "controlIcon": "icon-server",
+      "layerType": "physicalLayer",
+      "type": "custom-rect",
+      "label": "服务器",
+      "labelCfg": {
+        "style": {
+          "fill": "rgb(45, 204, 255)"
+        }
+      },
+      "style": {
+        "selected": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "highlight": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "dark": {
+          "opacity": 0.5
+        },
+        "stroke": "rgb(45, 204, 255)",
+        "fill": "rgb(7, 29, 51)",
+        "lineWidth": 2,
+        "height": 60,
+        "width": 150,
+        "shadowColor": "rgb(45, 204, 255)",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
+        "shadowBlur": 50,
+        "r": 30
+      },
+      "id": "rect68licohd",
+      "x": 617.1180555555555,
+      "y": 14.114999999999952,
+      "parentComboId": "physicalLayer"
+    },
+    {
+      "controlId": "59626a3b657141239d9f59c27733462d",
+      "controlName": "执行引擎",
+      "attrData": [
+        {
+          "sysRecordIndex": 1,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributey372czhbrc8kp566d3p9jb6",
+          "attirbuteValueEg": "944620",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944620",
+          "attributeInstanceValue": "执行引擎944620",
+          "attributeType": "1",
+          "attributeName": "实例编号",
+          "attributeDefaultValue": "执行引擎944620"
+        },
+        {
+          "sysRecordIndex": 2,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attribute2n12i4o8ugr5gjute1371fj",
+          "attirbuteValueEg": "",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944621",
+          "attributeInstanceValue": "执行引擎001",
+          "attributeType": "1",
+          "attributeName": "实例名称",
+          "attributeDefaultValue": "执行引擎001"
+        },
+        {
+          "sysRecordIndex": 3,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributey31c3fvc3gnxw4i0ltwqnb0",
+          "attirbuteValueEg": "8001",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944622",
+          "attributeInstanceValue": "8001",
+          "attributeType": "1",
+          "attributeName": "运行端口",
+          "attributeDefaultValue": "8001"
+        },
+        {
+          "sysRecordIndex": 4,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attribute73kgmwak8fo7nixtuovisbk",
+          "attirbuteValueEg": "9001",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944623",
+          "attributeInstanceValue": "9001",
+          "attributeType": "1",
+          "attributeName": "监控端口",
+          "attributeDefaultValue": "9001"
+        },
+        {
+          "sysRecordIndex": 5,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attribute1ubtrwxkpjm3aewm97rounn",
+          "attirbuteValueEg": "",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944624",
+          "attributeInstanceValue": "/data/logs",
+          "attributeType": "1",
+          "attributeName": "日志目录",
+          "attributeDefaultValue": "/data/logs"
+        },
+        {
+          "sysRecordIndex": 6,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributeoou9e256wgpw04374k0ox2z",
+          "attirbuteValueEg": "是|否",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944625",
+          "attributeInstanceValue": "是|否",
+          "attributeType": "2",
+          "attributeName": "开启日志",
+          "attributeDefaultValue": "是|否"
+        },
+        {
+          "sysRecordIndex": 7,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributem0djbmdx5w1gyc7861j6g7t",
+          "attirbuteValueEg": "执行引擎编号execEngineId",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "04f9e4bf469c49618d11345a07944626",
+          "attributeInstanceValue": "exec_engine_id",
+          "attributeType": "1",
+          "attributeName": "关联执行引擎编号",
+          "attributeDefaultValue": "exec_engine_id"
+        },
+        {
+          "sysRecordIndex": 8,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attribute9w5wqvf8b9ztgd6shpee656",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "radio",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "164abaea77fd4302b5132b50e4aa1963",
+          "attributeInstanceValue": "正常|异常",
+          "attributeType": "2",
+          "attributeName": "运行状态",
+          "attributeDefaultValue": "正常|异常"
+        },
+        {
+          "sysRecordIndex": 9,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributek7imywcpjzdfufhoz19vl2v",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "textarea",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "581296c1fae047c0905bc71ff0f0b7b1",
+          "attributeType": "5",
+          "attributeName": "执行引擎业务描述"
+        },
+        {
+          "sysRecordIndex": 10,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributerubiyux90mxt8517j96kxvl",
+          "attirbuteValueEg": "1",
+          "attributeRemark": "2",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "muti-select",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "9405cf94ccfa4b88bf8b4dfc1bfeba36",
+          "attributeInstanceValue": "以|而|三|2|3",
+          "attributeType": "7",
+          "attributeName": "单选测试",
+          "attributeDefaultValue": "以|而|三|2|3"
+        },
+        {
+          "sysRecordIndex": 11,
+          "layerType": "applicationLayer",
+          "attributeInstanceId": "attributealaepiql4e7db11x9wlw691",
+          "attirbuteValueEg": "",
+          "controlName": "执行引擎",
+          "controlIcon": "icon-jueceyinqing\r\n",
+          "remark": "",
+          "dataName": "input",
+          "controlId": "59626a3b657141239d9f59c27733462d",
+          "controlShape": "rect",
+          "attributeId": "bb35cb0b2afa4d3c981f6947edf20ded",
+          "attributeType": "1",
+          "attributeName": "IP"
+        }
+      ],
+      "controlShape": "rect",
+      "controlIcon": "icon-jueceyinqing\r\n",
+      "layerType": "applicationLayer",
+      "type": "custom-rect",
+      "label": "执行引擎",
+      "labelCfg": {
+        "style": {
+          "fill": "rgb(45, 204, 255)"
+        }
+      },
+      "style": {
+        "selected": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "highlight": {
+          "lineWidth": 4,
+          "stroke": "rgb(95, 149, 255)",
+          "fill": "rgb(7, 29, 51)"
+        },
+        "dark": {
+          "opacity": 0.5
+        },
+        "stroke": "rgb(45, 204, 255)",
+        "fill": "rgb(7, 29, 51)",
+        "lineWidth": 2,
+        "height": 60,
+        "width": 150,
+        "shadowColor": "rgb(45, 204, 255)",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
+        "shadowBlur": 50,
+        "r": 30
+      },
+      "id": "rect9wol52bc",
+      "x": 457.5625,
+      "y": 250.5,
+      "parentComboId": "applicationLayer"
+    }
+  ],
+  "edges": [
+    {
+      "source": "rectnkd1q4fp",
+      "target": "rect9wol52bc",
+      "type": "arrow-running",
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1
+        },
+        "selected": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "shadowColor": "rgb(95, 149, 255)",
+          "shadowBlur": 10,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "highlight": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(234, 234, 234)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(245, 245, 245)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "endArrow": {
+          "path": "M 0,0 L 15,-5 L 15,5 Z",
+          "fill": "rgb(45, 204, 255)"
+        },
+        "stroke": "rgb(45, 204, 255)"
+      },
+      "id": "edge-0.89615264122517611690536988130",
+      "startPoint": {
+        "x": 444.5323056221787,
+        "y": 75.11499999999995
+      },
+      "endPoint": {
+        "x": 513.3221774092635,
+        "y": 249.5
+      }
+    },
+    {
+      "source": "rect68licohd",
+      "target": "rect9wol52bc",
+      "type": "arrow-running",
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1
+        },
+        "selected": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "shadowColor": "rgb(95, 149, 255)",
+          "shadowBlur": 10,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "highlight": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(234, 234, 234)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(245, 245, 245)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "endArrow": {
+          "path": "M 0,0 L 15,-5 L 15,5 Z",
+          "fill": "rgb(45, 204, 255)"
+        },
+        "stroke": "rgb(45, 204, 255)"
+      },
+      "id": "edge-0.96361058687613291690536989940",
+      "startPoint": {
+        "x": 656.8867053013112,
+        "y": 75.11499999999995
+      },
+      "endPoint": {
+        "x": 542.4024768088377,
+        "y": 249.5
+      }
+    },
+    {
+      "source": "rect9wol52bc",
+      "target": "rect218ys935",
+      "type": "arrow-running",
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1
+        },
+        "selected": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "shadowColor": "rgb(95, 149, 255)",
+          "shadowBlur": 10,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "highlight": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(234, 234, 234)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(245, 245, 245)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "endArrow": {
+          "path": "M 0,0 L 15,-5 L 15,5 Z",
+          "fill": "rgb(45, 204, 255)"
+        },
+        "stroke": "rgb(45, 204, 255)"
+      },
+      "id": "edge-0.417045429337338241690536991238",
+      "startPoint": {
+        "x": 523.9979354354355,
+        "y": 311.5
+      },
+      "endPoint": {
+        "x": 510.9874363867684,
+        "y": 612.5
+      }
+    },
+    {
+      "source": "rect218ys935",
+      "target": "rect8to7zmdo",
+      "type": "arrow-running",
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1
+        },
+        "selected": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "shadowColor": "rgb(95, 149, 255)",
+          "shadowBlur": 10,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "highlight": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 2,
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(234, 234, 234)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(245, 245, 245)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "endArrow": {
+          "path": "M 0,0 L 15,-5 L 15,5 Z",
+          "fill": "rgb(45, 204, 255)"
+        },
+        "stroke": "rgb(45, 204, 255)"
+      },
+      "id": "edge-0.224179434825491961690536992905",
+      "startPoint": {
+        "x": 478.8275,
+        "y": 674.5
+      },
+      "endPoint": {
+        "x": 364.2701923076923,
+        "y": 841.5
+      }
+    }
+  ],
+  "combos": [
+    {
+      "id": "physicalLayer",
+      "type": "customCombo",
+      "labelName": "物理层",
+      "gridShow": true,
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1,
+          "fill": "rgb(247, 250, 255)"
+        },
+        "selected": {
+          "fill": "green",
+          "lineWidth": 0
+        },
+        "highlight": {
+          "stroke": "#4572d9",
+          "lineWidth": 2,
+          "fill": "rgb(253, 253, 253)",
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(224, 224, 224)",
+          "fill": "rgb(253, 253, 253)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(234, 234, 234)",
+          "fill": "rgb(250, 250, 250)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "r": 613,
+        "width": 1226,
+        "height": 91.5,
+        "fill": "none"
+      },
+      "depth": 10,
+      "x": 613,
+      "y": 45.75,
+      "layerLabelSize": 20,
+      "layerLabelColor": "#f2f561",
+      "fixSize": [1226, 91.5]
+    },
+    {
+      "id": "applicationLayer",
+      "type": "customCombo",
+      "labelName": "应用层",
+      "gridShow": true,
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1,
+          "fill": "rgb(247, 250, 255)"
+        },
+        "selected": {
+          "fill": "green",
+          "lineWidth": 0
+        },
+        "highlight": {
+          "stroke": "#4572d9",
+          "lineWidth": 2,
+          "fill": "rgb(253, 253, 253)",
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(224, 224, 224)",
+          "fill": "rgb(253, 253, 253)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(234, 234, 234)",
+          "fill": "rgb(250, 250, 250)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "r": 613,
+        "width": 1226,
+        "height": 366,
+        "fill": "none"
+      },
+      "depth": 20,
+      "x": 613,
+      "y": 274.5,
+      "layerLabelSize": 20,
+      "layerLabelColor": "#f2f561",
+      "fixSize": [1226, 366]
+    },
+    {
+      "id": "businessLayer",
+      "type": "customCombo",
+      "labelName": "业务层",
+      "gridShow": true,
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1,
+          "fill": "rgb(247, 250, 255)"
+        },
+        "selected": {
+          "fill": "green",
+          "lineWidth": 0
+        },
+        "highlight": {
+          "stroke": "#4572d9",
+          "lineWidth": 2,
+          "fill": "rgb(253, 253, 253)",
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(224, 224, 224)",
+          "fill": "rgb(253, 253, 253)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(234, 234, 234)",
+          "fill": "rgb(250, 250, 250)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "r": 613,
+        "width": 1226,
+        "height": 366,
+        "fill": "none"
+      },
+      "depth": 30,
+      "x": 613,
+      "y": 640.5,
+      "layerLabelSize": 20,
+      "layerLabelColor": "#f2f561",
+      "fixSize": [1226, 366]
+    },
+    {
+      "id": "middleWareLayer",
+      "type": "customCombo",
+      "labelName": "中间件 数据库",
+      "gridShow": true,
+      "style": {
+        "active": {
+          "stroke": "rgb(95, 149, 255)",
+          "lineWidth": 1,
+          "fill": "rgb(247, 250, 255)"
+        },
+        "selected": {
+          "fill": "green",
+          "lineWidth": 0
+        },
+        "highlight": {
+          "stroke": "#4572d9",
+          "lineWidth": 2,
+          "fill": "rgb(253, 253, 253)",
+          "text-shape": {
+            "fontWeight": 500
+          }
+        },
+        "inactive": {
+          "stroke": "rgb(224, 224, 224)",
+          "fill": "rgb(253, 253, 253)",
+          "lineWidth": 1
+        },
+        "disable": {
+          "stroke": "rgb(234, 234, 234)",
+          "fill": "rgb(250, 250, 250)",
+          "lineWidth": 1
+        },
+        "lineDash": [5, 2, 1, 2],
+        "r": 613,
+        "width": 1226,
+        "height": 91.5,
+        "fill": "none"
+      },
+      "depth": 40,
+      "x": 613,
+      "y": 869.25,
+      "layerLabelSize": 20,
+      "layerLabelColor": "#f2f561",
+      "fixSize": [1226, 91.5]
+    }
+  ],
+  "globalConfig": {
+    "unlinkOpacity": 50,
+    "defaultHighlightNodeId": "",
+    "alarmColorOne": "#FF4500",
+    "alarmColorTwo": "#800080",
+    "alarmColorThree": "#A52A2A",
+    "alarmColorFour": "#FFA500",
+    "alarmColorFive": "#FFFF00",
+    "layerLabelSize": 20,
+    "layerLabelColor": "#f2f561",
+    "layerOneHeight": 10,
+    "layerTwoHeight": 40,
+    "layerThreeHeight": 40,
+    "layerFourHeight": 10
+  }
+}
