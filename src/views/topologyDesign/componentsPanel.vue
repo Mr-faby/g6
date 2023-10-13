@@ -1,13 +1,17 @@
 <template>
-  <draggable class="components-panel" v-model="componentsObj" :group="{ name: 'group', pull: 'clone', put: false }"
-    :move="onMove" @start="onDragStart" @end="onDragEnd">
-    <!-- <div class="comp-item" v-for="comp in components" :key="comp.controlId">
-      <a-button :icon="comp.controlIcon">{{ comp.controlName }}</a-button>
-    </div> -->
-
-    <div v-for="comp in componentsObj" :key="comp.controlId" class="comp-item">
-      <span class="control-name">{{ comp.controlName }}</span>
-    </div>
+  <draggable
+    class="components-panel"
+    :list="components"
+    group="components"
+    :move="onMove"
+    @start="onDragStart"
+    @end="onDragEnd"
+  >
+    <template #item="{ element, index }">
+      <div class="comp-item">
+        <span class="control-name">{{ element.controlName }}</span>
+      </div>
+    </template>
   </draggable>
 </template>
 
@@ -25,28 +29,18 @@ const props = withDefaults(
   }
 )
 
-const emit = defineEmits(['input', 'update:components'])
-
-const componentsObj = computed({
-  get() {
-    return props.components
-  },
-  set(value) {
-    emit('update:components', value)
-  }
-})
+const emit = defineEmits(['update:modelValue', 'update:components'])
 
 const onMove = (dragEvent: Record<string, any>) => {
   return dragEvent.from !== dragEvent.to
 }
 
 const onDragStart = (ev: any) => {
-  console.log('%c 🍠 ev: ', 'font-size:12px;background-color: #7F2B82;color:#fff;', ev)
-  emit('input', ev.item)
+  emit('update:modelValue', ev.item)
 }
 
 const onDragEnd = () => {
-  emit('input', {})
+  emit('update:modelValue', {})
 }
 </script>
 

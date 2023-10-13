@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%">
-    <preview v-if="isPreview" :graphData="DefaultGraph"></preview>
+    <preview v-if="isPreview"></preview>
     <topology-design
       v-else
       :components="components"
@@ -15,7 +15,7 @@ import { ref, onBeforeMount } from 'vue'
 import { useRoute } from 'vue-router'
 import TopologyDesign from './index.vue'
 import preview from './preview.vue'
-import DefaultGraph from './asset/defaultGraph.json'
+import type { DesignComponent } from './type'
 
 type GraphDTO = {
   canvasId: string
@@ -28,136 +28,71 @@ const route = useRoute()
 
 const isPreview = ref(false)
 // 元素列表
-const components: any[] = [
+const components: DesignComponent[] = [
   {
-    name: '圆',
-    icon: 'smile',
-    id: 'circle',
-    type: 'circle',
-    attrData: [
-      {
-        name: 'firstName',
-        label: '名',
-        value: 'chunjiao',
-        type: 'input'
-      },
-      {
-        name: 'age',
-        label: '年龄',
-        value: '30',
-        type: 'select',
-        options: [
-          {
-            title: '10',
-            disabled: false,
-            value: '10'
-          },
-          {
-            title: '20',
-            disabled: false,
-            value: '20'
-          },
-          {
-            title: '30',
-            disabled: true,
-            value: '30'
-          }
-        ]
-      },
-      {
-        name: 'fullName',
-        label: '全名',
-        value: 'zhiming',
-        type: 'input'
-      }
-    ]
+    controlName: '数据中心',
+    controlIcon: 'smile',
+    controlId: 'dataCenter',
+    controlShape: 'rect',
+    layerType: 'middleWareLayer',
+    attrData: []
   },
   {
-    name: '椭圆',
-    icon: 'smile',
-    id: 'ellipse',
-    type: 'ellipse',
-    label: '产业科技服务器',
-    attrData: [{ hello: 'ellipse', name: 'ellipse' }]
+    controlName: '中间件',
+    controlIcon: 'middleWare',
+    controlId: 'middleWare',
+    controlShape: 'rect',
+    layerType: 'physicalLayer',
+    attrData: []
   },
   {
-    name: 'SoSmart服务器',
-    icon: 'smile',
-    type: 'custom-rect',
-    attrData: [{ hello: 'rect' }],
-    label: 'SoSmart服务器',
-    labelCfg: {
-      style: {
-        fill: 'rgb(45, 204, 255)'
-      }
-    },
-    style: {
-      stroke: 'rgb(45, 204, 255)',
-      fill: 'rgb(7, 29, 51)',
-      lineWidth: 2,
-      height: 60,
-      width: 150,
-      shadowColor: 'rgb(45, 204, 255)',
-      shadowOffsetX: 0,
-      shadowOffsetY: 0,
-      shadowBlur: 10
-    }
+    controlName: '执行引擎',
+    controlIcon: 'engine',
+    controlId: 'engine',
+    controlShape: 'rect',
+    layerType: 'applicationLayer',
+    attrData: []
   },
   {
-    name: '产业科技服务器',
-    icon: 'smile',
-    type: 'rect',
-    attrData: [{ hello: 'rect' }],
-    label: '产业科技服务器',
-    labelCfg: {
-      style: {
-        fill: 'rgb(45, 204, 255)'
-      }
-    },
-    style: {
-      stroke: 'rgb(45, 204, 255)',
-      fill: 'rgb(7, 29, 51)',
-      lineWidth: 2,
-      height: 60,
-      width: 150,
-      shadowColor: 'rgb(45, 204, 255)',
-      shadowOffsetX: 0,
-      shadowOffsetY: 0,
-      shadowBlur: 10
-    }
+    controlName: '接口',
+    controlIcon: 'interface',
+    controlId: 'interface',
+    controlShape: 'rect',
+    layerType: 'businessLayer',
+    attrData: []
   },
   {
-    name: '菱形',
-    icon: 'smile',
-    id: 'diamond',
-    type: 'diamond',
-    label: '产业科技服务器',
-    attrData: [{ hello: 'diamond' }]
+    controlName: '项目',
+    controlIcon: 'project',
+    controlId: 'project',
+    controlShape: 'rect',
+    layerType: 'applicationLayer',
+    attrData: []
   },
   {
-    name: '星形',
-    icon: 'smile',
-    id: 'star',
-    type: 'star',
-    label: '产业科技服务器',
-    attrData: [{ hello: 'star' }]
+    controlName: '系统',
+    controlIcon: 'system',
+    controlId: 'system',
+    controlShape: 'rect',
+    layerType: 'businessLayer',
+    attrData: []
+  },
+
+  {
+    controlName: '服务器',
+    controlIcon: 'server',
+    controlId: 'server',
+    controlShape: 'rect',
+    layerType: 'middleWareLayer',
+    attrData: []
   },
   {
-    name: '三角形',
-    icon: 'smile',
-    id: 'triangle',
-    label: '产业科技服务器',
-    type: 'triangle',
-    attrData: [{ hello: 'triangle' }]
-  },
-  {
-    name: '图片',
-    icon: 'smile',
-    id: 'image',
-    type: 'image',
-    label: '产业科技服务器',
-    img: 'https://gw.alipayobjects.com/os/s/prod/antv/assets/image/logo-with-text-73b8a.svg',
-    attrData: [{ hello: 'image' }]
+    controlName: '数据库',
+    controlIcon: 'data',
+    controlId: 'data',
+    controlShape: 'rect',
+    layerType: 'physicalLayer',
+    attrData: []
   }
 ]
 // 图表数据

@@ -1,6 +1,5 @@
 <template>
   <div class="preview-comp">
-    <test-ssss />
     <div id="preview" ref="previewContainer"></div>
     <!-- <attribute-panel
       class="attribute"
@@ -23,7 +22,6 @@ import G6, { Graph, G6GraphEvent } from '@antv/g6'
 import type { INode, Item } from '@antv/g6'
 import { clone, mix, isNumber } from '@antv/util'
 // import AttributePanel from './attributePanel'
-import TestSsss from './test2.vue'
 import { Action, GlobalConfig } from './type'
 import type { DesignComponent, NodeAttr } from './type'
 // import DetailModal from './detail.vue'

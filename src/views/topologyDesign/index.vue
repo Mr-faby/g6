@@ -1,8 +1,15 @@
 <template>
   <div class="topology-design">
     <components-panel :components="components" v-model="dragOriginObj"></components-panel>
-    <designer :components="components" :graphData="graphData" :dragOriginObj="dragOriginObj" :globalConfig="globalConfig"
-      @setGraph="setGraph" @saveGraph="saveGraph" @handleNodeClick="handleNodeClick"></designer>
+    <designer
+      :components="components"
+      :graphData="graphData"
+      :dragOriginObj="dragOriginObj"
+      :globalConfig="globalConfig"
+      @setGraph="setGraph"
+      @saveGraph="saveGraph"
+      @handleNodeClick="handleNodeClick"
+    ></designer>
     <!-- <attribute-panel
       :activatedNodeData="activatedNodeData"
       :globalConfig="globalConfig"
@@ -12,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch, reactive } from 'vue'
 import ComponentsPanel from './componentsPanel.vue'
 import Designer from './designer.vue'
 // import AttributePanel from './attributePanel'
@@ -34,7 +41,7 @@ const emit = defineEmits(['saveGraph'])
 
 let activatedNodeData: Record<string, any> = {}
 let graph: any = {}
-let dragOriginObj: Record<string, any> = {}
+let dragOriginObj: Record<string, any> = ref({ name: 'hello' })
 let globalConfig: GlobalConfig = new GlobalConfig()
 
 watch(
@@ -63,7 +70,7 @@ const setGraph = (graphData: Graph) => {
   width: 100%;
   height: 100%; // 这里设置设计器的高度
 
-  &>div {
+  & > div {
     display: inline-block;
     margin: 10px;
     border: 1px solid rgb(196, 196, 196);

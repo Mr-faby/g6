@@ -1,21 +1,22 @@
 <template>
-  <draggable class="designer" v-model="componentList" group="group" :draggable="true">
+  <div class="designer">
     <div id="designer" ref="designer"></div>
     <div class="operate-panel">
       <!-- <a-icon title="清除画布" type="redo" @click="clearGraph" /> -->
-      <a-icon title="网格开关" type="number" @click="switchLayerGrid" />
-      <a-icon title="保存" type="save" @click="saveGraph" />
+      <BorderlessTableOutlined title="网格开关" @click="switchLayerGrid" />
+      <SaveOutlined title="保存" @click="saveGraph" />
     </div>
-  </draggable>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onUnmounted } from 'vue'
+import { ref, watch, onUnmounted, onMounted } from 'vue'
 import G6, { Graph, G6GraphEvent } from '@antv/g6'
 import type { Item, IEdge, INode } from '@antv/g6'
 import { type DesignComponent, type NodeAttr, GlobalConfig } from './type'
 import draggable from 'vuedraggable'
 import { clone, mix, isNumber } from '@antv/util'
+import { SaveOutlined, BorderlessTableOutlined } from '@ant-design/icons-vue'
 
 const props = withDefaults(
   defineProps<{
@@ -61,10 +62,9 @@ const Rect = {
   }
 }
 let graph: Graph
-let componentList: DesignComponent[] = []
 let addingEdge = false // 正在执行连线操作的状态
 let edge: Item | boolean // 当前正在绘制的那条线
-let layerArr = [
+const layerArr = [
   {
     id: 'physicalLayer',
     name: '物理层'
@@ -85,7 +85,7 @@ let layerArr = [
 
 watch(
   () => props.graphData,
-  (newValue, oldValue) => {
+  () => {
     if (props.graphData.nodes) {
       initG6()
     }
@@ -96,17 +96,18 @@ watch(
   () => props.dragOriginObj,
   (newValue, oldValue) => {
     const { _underlying_vm_: config } = newValue || {}
+    console.log('%c 🥩 config: ', 'font-size:12px;background-color: #FCA650;color:#fff;', config)
     layerArr.map((layer) => {
       const item = graph.findById(layer.id)
       const style = item.getModel().style
-        ; (style!.fill = !config
-          ? 'none'
-          : layer.id === config.layerType
-            ? 'rgba(0,128,0,0.5)'
-            : 'rgba(255,0,0,0.5)'),
-          item.update({
-            style
-          })
+      ;(style!.fill = !config
+        ? 'none'
+        : layer.id === config.layerType
+        ? 'rgba(0,128,0,0.5)'
+        : 'rgba(255,0,0,0.5)'),
+        item.update({
+          style
+        })
     })
   }
 )
@@ -120,19 +121,18 @@ watch(
     })
   }
 )
-// 来一个防抖
-const debounce = (func: Function, delay: number = 500) => {
-  let timer: any
-  return function (...args: any[]) {
-    clearTimeout(timer)
-    timer = setTimeout(() => {
-      // @ts-ignore
-      func.apply(this, args)
-    }, delay)
-  }
-}
 
-const layerHeightChange = () => {
+watch(
+  [
+    () => props.globalConfig.layerOneHeight,
+    () => props.globalConfig.layerTwoHeight,
+    () => props.globalConfig.layerThreeHeight,
+    () => props.globalConfig.layerFourHeight
+  ],
+  layerHeightChange
+)
+// 根据画布缩放比例重新计算层级宽高
+function layerHeightChange() {
   const canvasW = graph.getWidth(),
     canvasH = graph.getHeight(),
     zoom = graph.getZoom()
@@ -156,20 +156,26 @@ const layerHeightChange = () => {
   })
   updateNodePositionOfZoom()
 }
+
+// 来一个防抖
+function debounce(func: Function, delay: number = 500) {
+  let timer: any
+  return function (...args: any[]) {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      // @ts-ignore
+      func.apply(this, args)
+    }, delay)
+  }
+}
 const computedLayerSizeDebounce = debounce(layerHeightChange)
 
-// 根据画布缩放比例重新计算层级宽高
-watch(
-  [
-    () => props.globalConfig.layerOneHeight,
-    () => props.globalConfig.layerTwoHeight,
-    () => props.globalConfig.layerThreeHeight,
-    () => props.globalConfig.layerFourHeight
-  ],
-  layerHeightChange
-)
+onMounted(() => {
+  initG6()
+  layerHeightChange()
+})
 
-const initG6 = () => {
+function initG6() {
   registerArrowEdge()
   registerCustomShape()
   registerCustomCombo()
@@ -218,14 +224,16 @@ const initG6 = () => {
     },
     plugins: [contextMenu]
   })
-  graph.data(Object.assign(props.graphData, { combos: initLayer() }))
+  const data = Object.assign(props.graphData, { combos: initLayer() })
+  console.log('%c 🎂 data: ', 'font-size:12px;background-color: #E41A6A;color:#fff;', data)
+  graph.data(data)
   graph.render()
   registryListener()
   emit('setGraph', graph)
 }
 
 // 初始化分层
-const initLayer = () => {
+function initLayer() {
   return layerArr.map((layer, index) => {
     return {
       id: layer.id,
@@ -233,14 +241,15 @@ const initLayer = () => {
       labelName: layer.name,
       gridShow: true,
       style: {
-        lineDash: [5, 2, 1, 2]
+        lineDash: [5, 2, 1, 2],
+        fill: 'none'
       }
     }
   })
 }
 
 // 注册自定义 Combo
-const registerCustomCombo = () => {
+function registerCustomCombo() {
   G6.registerCombo(
     'customCombo',
     {
@@ -272,6 +281,7 @@ const registerCustomCombo = () => {
         const cfgStyle = clone(cfg.style)
         let width, height
         let { fixSize } = cfg
+        console.log('%c 🍒 cfg: ', 'font-size:12px;background-color: #3F7CFF;color:#fff;', cfg)
         if (!fixSize) fixSize = [0, 0]
         width = fixSize[0]
         height = fixSize[1]
@@ -286,7 +296,7 @@ const registerCustomCombo = () => {
         // 与 getShapeStyle 不同在于，update 时需要获取到当前的 style 进行融合。即新传入的配置项中没有涉及的属性，保留当前的配置。
         const keyShape = item.get('keyShape')
         const style = mix({}, keyShape.attr(), strokeStyle, cfgStyle)
-          ; (this as any).updateShape(cfg, item, style, false)
+        ;(this as any).updateShape(cfg, item, style, false)
 
         // 缩放时更新label位置
         const textShape = item.get('group').find((e: any) => e.get('name') === 'layerLabel')
@@ -300,13 +310,13 @@ const registerCustomCombo = () => {
 }
 
 // 绘制节点操作菜单
-const registerMenu = (): Record<string, any> => {
+function registerMenu(): Record<string, any> {
   return new G6.Menu({
     getContent() {
       return `
           <div class="context-menu">
-            <p key="edge" title="连接"></p>
-            <p key="delete" title="删除"></p>
+            <p key="edge" title="连接">连接</p>
+            <p key="delete" title="删除">删除</p>
           </div>
         `
     },
@@ -334,7 +344,7 @@ const registerMenu = (): Record<string, any> => {
 }
 
 // 绘制流动线条
-const registerArrowEdge = () => {
+function registerArrowEdge() {
   G6.registerEdge(
     'arrow-running',
     {
@@ -386,7 +396,7 @@ const registerArrowEdge = () => {
 }
 
 // 自定义元素
-const registerCustomShape = () => {
+function registerCustomShape() {
   G6.registerNode('custom-rect', {
     drawShape(cfg, group) {
       console.log('%c 🍠 cfg: ', 'font-size:12px;background-color: #FFDD4D;color:#fff;', cfg)
@@ -521,7 +531,7 @@ const reSetNodePosition = (item: INode, ev?: any) => {
   const parentComboId = node.parentComboId as string
   if (!parentComboId) return
   const combo = graph.findById(parentComboId).getModel()
-  const fixSize: number[] = combo.fixSiz as number[]
+  const fixSize: number[] = combo.fixSize as number[]
   const nodeW = node.style!.width as number,
     nodeH = node.style!.height as number
   const comboHalfW = fixSize[0] / 2,
@@ -610,7 +620,7 @@ onUnmounted(() => {
 .designer {
   width: calc(65% - 20px);
   position: relative;
-  background: url('~@/traditional/assets/images/topologicalGraph/bj.png') no-repeat center;
+  background: url('~@/topologyDesign/asset/bj.png') no-repeat center;
 
   #designer {
     width: 100%;
@@ -632,19 +642,14 @@ onUnmounted(() => {
   }
 
   /deep/.context-menu {
-    img {
-      cursor: pointer;
-      width: 20px;
-      height: 30px;
-      display: block;
-      margin-bottom: 2px;
-      background-color: white;
-      border: 2px solid #eeeeee;
-      border-radius: 5px;
-      opacity: 0.8;
-
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    p {
       &:hover {
-        opacity: 1;
+        color: rgb(95, 149, 255);
       }
     }
   }
