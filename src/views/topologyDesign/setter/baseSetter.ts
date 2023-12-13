@@ -1,14 +1,25 @@
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { defineComponent } from 'vue'
 
-@Component
-export default class BaseSetter extends Vue {
-  @Prop({ default: "" }) value: string | number;
-  @Prop() max: number;
-  @Prop() label: string;
-  @Prop({ default: () => [] }) options: any[];
-  @Prop({ default: false }) readonlyBol: boolean;
-
-  handleChange(ev: string | string[]) {
-    this.$emit("change", ev);
+export default defineComponent({
+  props: {
+    value: {
+      type: [String, Number],
+      default: ''
+    },
+    max: Number,
+    label: String,
+    options: {
+      type: Array,
+      default: () => []
+    },
+    readonlyBol: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    handleChange(ev: string | string[]) {
+      this.$emit('change', ev)
+    }
   }
-}
+})

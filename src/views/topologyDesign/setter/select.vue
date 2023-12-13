@@ -1,24 +1,30 @@
 <template>
-  <a-form-model-item :label="label">
-    <a-select :value="value" @change="handleChange" :disabled="readonly">
-      <a-select-option
-        v-for="i in options"
-        :key="i.value"
-        :value="i.value"
-        :disabled="i.disabled"
-      >
+  <a-form-item :label="label">
+    <a-select :value="value" @change="handleChange" :disabled="readonlyBol">
+      <a-select-option v-for="i in options" :key="i.value" :value="i.value" :disabled="i.disabled">
         {{ i.title }}
       </a-select-option>
     </a-select>
-  </a-form-model-item>
+  </a-form-item>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator";
-import BaseSetter from "./baseSetter";
+import BaseSetter from './baseSetter'
+import { defineComponent, type PropType } from 'vue'
 
-@Component
-export default class Select extends BaseSetter {
-  @Prop() options: { title: string; value: any; disabled: boolean }[] = [];
+type OptionT = {
+  title: string
+  value: unknown
+  disabled: boolean
 }
+
+export default defineComponent({
+  extends: BaseSetter,
+  props: {
+    options: {
+      type: Array as PropType<OptionT[]>,
+      default: () => []
+    }
+  }
+})
 </script>

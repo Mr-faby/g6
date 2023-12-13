@@ -1,13 +1,14 @@
 <template>
-  <a-form-model-item :label="label">
+  <a-form-item :label="label">
     <a-checkbox-group :value="value" @change="handleChange" :options="options"></a-checkbox-group>
-  </a-form-model-item>
+  </a-form-item>
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
-import BaseSetter from "./baseSetter";
+import BaseSetter from './baseSetter'
+import { defineComponent } from 'vue'
 
-@Component
-export default class Checkbox extends BaseSetter {}
+export default defineComponent({
+  extends: BaseSetter,
+})
 </script>

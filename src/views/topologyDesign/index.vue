@@ -10,19 +10,19 @@
       @saveGraph="saveGraph"
       @handleNodeClick="handleNodeClick"
     ></designer>
-    <!-- <attribute-panel
+    <attribute-panel
       :activatedNodeData="activatedNodeData"
       :globalConfig="globalConfig"
       :graph="graph"
-    ></attribute-panel> -->
+    ></attribute-panel>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch, reactive } from 'vue'
+import { ref, watch } from 'vue'
 import ComponentsPanel from './componentsPanel.vue'
 import Designer from './designer.vue'
-// import AttributePanel from './attributePanel'
+import AttributePanel from './attributePanel'
 import { GlobalConfig, type DesignComponent } from './type'
 import { Graph } from '@antv/g6'
 
@@ -39,7 +39,7 @@ const props = withDefaults(
 
 const emit = defineEmits(['saveGraph'])
 
-let activatedNodeData: Record<string, any> = {}
+let activatedNodeData: Record<string, any> = ref({})
 let graph: any = {}
 let dragOriginObj: Record<string, any> = ref({ name: 'hello' })
 let globalConfig: GlobalConfig = new GlobalConfig()
@@ -52,7 +52,7 @@ watch(
 )
 
 const handleNodeClick = (node: Record<string, any>) => {
-  activatedNodeData = node
+  activatedNodeData.value = node
   console.log('%c 🍓 node: ', 'font-size:12px;background-color: #FFDD4D;color:#fff;', node)
 }
 

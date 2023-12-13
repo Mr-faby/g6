@@ -35,7 +35,24 @@ const components: DesignComponent[] = [
     controlId: 'dataCenter',
     controlShape: 'rect',
     layerType: 'middleWareLayer',
-    attrData: []
+    attrData: [
+      {
+        dataName: 'input',
+        attributeId: 'c1',
+        attributeInstanceId: 'c1',
+        attributeName: '实例名称',
+        attributeInstanceValue: '',
+        attributeDefaultValue: ''
+      },
+      {
+        attributeInstanceId: 'attributehz7xjimvhqrbctjimgeroay',
+        dataName: 'radio',
+        attributeId: 'c6898dc0401a45f9be2e84b6731adee9',
+        attributeInstanceValue: 'GET|POST|DELETE|PUT|HEAD|TRACE|OPTIONS',
+        attributeName: '请求方法',
+        attributeDefaultValue: 'GET|POST|DELETE|PUT|HEAD|TRACE|OPTIONS'
+      }
+    ]
   },
   {
     controlName: '中间件',
