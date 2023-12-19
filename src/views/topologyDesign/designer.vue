@@ -111,12 +111,21 @@ watch(
     })
   }
 )
+watch(() => props.globalConfig.layerLabelColor, updateLayerLabelColor)
+function updateLayerLabelColor() {
+  graph.getCombos().map((layer) => {
+    layer.update({
+      layerLabelColor: props.globalConfig.layerLabelColor
+    })
+  })
+}
+
 watch(
-  [() => props.globalConfig.layerLabelColor, () => props.globalConfig.layerLabelSize],
+  () => props.globalConfig.layerLabelSize,
   (newValue, oldValue) => {
     graph.getCombos().map((layer) => {
       layer.update({
-        [String(newValue).includes('#') ? 'layerLabelColor' : 'layerLabelSize']: newValue
+        layerLabelSize: newValue
       })
     })
   }
@@ -173,6 +182,7 @@ const computedLayerSizeDebounce = debounce(layerHeightChange)
 onMounted(() => {
   initG6()
   layerHeightChange()
+  updateLayerLabelColor()
 })
 
 function initG6() {

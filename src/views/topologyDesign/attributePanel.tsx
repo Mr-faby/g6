@@ -51,73 +51,73 @@ const commonAttr = [
   },
 ]
 const globalAttr = [
-  {
-    name: 'unlinkOpacity',
-    type: 'number',
-    label: '失活透明度'
-  },
+  // {
+  //   name: 'unlinkOpacity',
+  //   type: 'Number',
+  //   label: '失活透明度'
+  // },
   {
     name: 'defaultHighlightNodeId',
-    type: 'input',
+    type: 'Input',
     label: '高亮链路节点ID'
   },
-  {
-    name: 'alarmColorOne',
-    type: 'color',
-    label: '一级告警色'
-  },
-  {
-    name: 'alarmColorTwo',
-    type: 'color',
-    label: '二级告警色'
-  },
-  {
-    name: 'alarmColorThree',
-    type: 'color',
-    label: '三级告警色'
-  },
-  {
-    name: 'alarmColorFour',
-    type: 'color',
-    label: '四级告警色'
-  },
-  {
-    name: 'alarmColorFive',
-    type: 'color',
-    label: '五级告警色'
-  },
+  // {
+  //   name: 'alarmColorOne',
+  //   type: 'Color',
+  //   label: '一级告警色'
+  // },
+  // {
+  //   name: 'alarmColorTwo',
+  //   type: 'Color',
+  //   label: '二级告警色'
+  // },
+  // {
+  //   name: 'alarmColorThree',
+  //   type: 'Color',
+  //   label: '三级告警色'
+  // },
+  // {
+  //   name: 'alarmColorFour',
+  //   type: 'Color',
+  //   label: '四级告警色'
+  // },
+  // {
+  //   name: 'alarmColorFive',
+  //   type: 'Color',
+  //   label: '五级告警色'
+  // },
   {
     name: 'layerOneHeight',
-    type: 'number',
+    type: 'Number',
     max: 100,
     label: '层级一高度百分比'
   },
   {
     name: 'layerTwoHeight',
-    type: 'number',
+    type: 'Number',
     max: 100,
     label: '层级二高度百分比'
   },
   {
     name: 'layerThreeHeight',
-    type: 'number',
+    type: 'Number',
     max: 100,
     label: '层级三高度百分比'
   },
   {
     name: 'layerFourHeight',
-    type: 'number',
+    type: 'Number',
     max: 100,
     label: '层级四高度百分比'
   },
   {
     name: 'layerLabelSize',
-    type: 'number',
+    type: 'Number',
     label: '层级文本字号'
   },
   {
     name: 'layerLabelColor',
-    type: 'color',
+    type: 'Color',
     label: '层级名称颜色'
   },
 ]
@@ -230,15 +230,11 @@ export default defineComponent({
             <a-tab-pane tab="全局" key="3" style="padding: 0 10px;">
               {
                 globalAttr.map((item) => {
-                  return h(`${item.type}Setter`, {
-                    props: {
-                      ...item,
-                      value: props.globalConfig[item.name as keyof GlobalConfig]
-                    },
-                    on: {
-                      change: (data: any) => {
-                        handleGlobalAttrChange(data, item.name)
-                      }
+                  return h(eval(`${item.type}Setter`), {
+                    ...item,
+                    value: props.globalConfig[item.name as keyof GlobalConfig],
+                    onUpdate: (data: any) => {
+                      handleGlobalAttrChange(data, item.name)
                     }
                   })
                 })
@@ -269,6 +265,7 @@ export default defineComponent({
 
     // 全局属性变更
     const handleGlobalAttrChange = (data: any, attrKey: string) => {
+      console.log('%c 🍅 data: ', 'font-size:12px;background-color: #4b4b4b;color:#fff;', data);
       // @ts-ignore
       props.globalConfig[attrKey] = data
     }

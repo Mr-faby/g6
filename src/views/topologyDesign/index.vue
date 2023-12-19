@@ -42,7 +42,7 @@ const emit = defineEmits(['saveGraph'])
 let activatedNodeData: Record<string, any> = ref({})
 let graph: any = {}
 let dragOriginObj: Record<string, any> = ref({ name: 'hello' })
-let globalConfig: GlobalConfig = new GlobalConfig()
+let globalConfig = ref(new GlobalConfig())
 
 watch(
   () => activatedNodeData,
