@@ -17,7 +17,7 @@ export default defineComponent({
   extends: BaseSetter,
   methods: {
     handleChange(ev: any) {
-      this.$emit('change', ev.target.value)
+      this.$emit('update', ev.target.value)
     }
   }
 })

@@ -18,13 +18,14 @@ export type NodeAttr = {
 }
 
 export type SetterType =
-  | 'input'
-  | 'select'
-  | 'number'
-  | 'handler'
-  | 'checkbox'
-  | 'radio'
-  | 'textarea'
+  | 'Input'
+  | 'Select'
+  | 'Number'
+  | 'Handler'
+  | 'Checkbox'
+  | 'Radio'
+  | 'Textarea'
+  | 'Color'
 
 export class Action {
   actionName = ''

@@ -19,7 +19,7 @@ export default defineComponent({
   },
   methods: {
     handleChange(ev: string | string[]) {
-      this.$emit('change', ev)
+      this.$emit('update', ev)
     }
   }
 })

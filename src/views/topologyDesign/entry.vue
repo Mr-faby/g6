@@ -37,20 +37,12 @@ const components: DesignComponent[] = [
     layerType: 'middleWareLayer',
     attrData: [
       {
-        dataName: 'input',
-        attributeId: 'c1',
-        attributeInstanceId: 'c1',
-        attributeName: '实例名称',
+        attributeInstanceId: 'attributexk3mcnnn66n9b6c124bn26r',
+        dataName: 'Input',
+        attributeId: '04f9e4bf469c49618d11345a07944614',
         attributeInstanceValue: '',
+        attributeName: '输入属性',
         attributeDefaultValue: ''
-      },
-      {
-        attributeInstanceId: 'attributehz7xjimvhqrbctjimgeroay',
-        dataName: 'radio',
-        attributeId: 'c6898dc0401a45f9be2e84b6731adee9',
-        attributeInstanceValue: 'GET|POST|DELETE|PUT|HEAD|TRACE|OPTIONS',
-        attributeName: '请求方法',
-        attributeDefaultValue: 'GET|POST|DELETE|PUT|HEAD|TRACE|OPTIONS'
       }
     ]
   },
@@ -60,7 +52,16 @@ const components: DesignComponent[] = [
     controlId: 'middleWare',
     controlShape: 'rect',
     layerType: 'physicalLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributehz7xjimvhqrbctjimgeroay',
+        dataName: 'Radio',
+        attributeId: 'c6898dc0401a45f9be2e84b6731adee9',
+        attributeInstanceValue: 'GET|POST|[DELETE]|PUT|HEAD|TRACE|OPTIONS',
+        attributeName: '单选属性',
+        attributeDefaultValue: 'GET|POST|[DELETE]|PUT|HEAD|TRACE|OPTIONS'
+      }
+    ]
   },
   {
     controlName: '执行引擎',
@@ -68,7 +69,16 @@ const components: DesignComponent[] = [
     controlId: 'engine',
     controlShape: 'rect',
     layerType: 'applicationLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributeec6v5hapcknimm10r3y3zk6',
+        dataName: 'Checkbox',
+        attributeId: 'beb6a039d835488da92444f4e40cfc81',
+        attributeInstanceValue: '[A]|B|[C]|D',
+        attributeName: '多选属性',
+        attributeDefaultValue: '[A]|B|[C]|D'
+      }
+    ]
   },
   {
     controlName: '接口',
@@ -76,7 +86,16 @@ const components: DesignComponent[] = [
     controlId: 'interface',
     controlShape: 'rect',
     layerType: 'businessLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributenciqpjrgf6y8i3kkfsdg8ryu4v',
+        dataName: 'Select',
+        attributeId: '46536d0d2dbe488e963ec30807eb5e6c',
+        attributeInstanceValue: 'A|[B]|C|D',
+        attributeName: '下拉属性',
+        attributeDefaultValue: 'A|[B]|C|D'
+      }
+    ]
   },
   {
     controlName: '项目',
@@ -84,7 +103,16 @@ const components: DesignComponent[] = [
     controlId: 'project',
     controlShape: 'rect',
     layerType: 'applicationLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributenciqpjrgf6y8i3kk2f8ry',
+        dataName: 'Number',
+        attributeId: 'c97fa3ec6fc342e438b3c88a5624a3e29',
+        attributeInstanceValue: '',
+        attributeName: '数字输入属性',
+        attributeDefaultValue: ''
+      }
+    ]
   },
   {
     controlName: '系统',
@@ -92,7 +120,16 @@ const components: DesignComponent[] = [
     controlId: 'system',
     controlShape: 'rect',
     layerType: 'businessLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributehz7xjimvhghherssfaase',
+        dataName: 'Color',
+        attributeId: 'c6898dc0401a45f9be2e3e4d4f5g',
+        attributeInstanceValue: 'green',
+        attributeName: '颜色属性',
+        attributeDefaultValue: 'green'
+      }
+    ]
   },
 
   {
@@ -101,7 +138,16 @@ const components: DesignComponent[] = [
     controlId: 'server',
     controlShape: 'rect',
     layerType: 'middleWareLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributehz7xjimvhqrbctjimgeroay',
+        dataName: 'Textarea',
+        attributeId: 'c6898dc0401a45f9be23d3e3ss6g',
+        attributeInstanceValue: '',
+        attributeName: '多行输入属性',
+        attributeDefaultValue: ''
+      }
+    ]
   },
   {
     controlName: '数据库',
@@ -109,7 +155,16 @@ const components: DesignComponent[] = [
     controlId: 'data',
     controlShape: 'rect',
     layerType: 'physicalLayer',
-    attrData: []
+    attrData: [
+      {
+        attributeInstanceId: 'attributehz7xjiheewsddx',
+        dataName: 'Input',
+        attributeId: 'c6898dc0401a45f9be2ett8e9e55f',
+        attributeInstanceValue: '',
+        attributeName: '输入属性',
+        attributeDefaultValue: ''
+      }
+    ]
   }
 ]
 // 图表数据

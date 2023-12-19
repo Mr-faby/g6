@@ -122,13 +122,19 @@ const globalAttr = [
   },
 ]
 const excludeAttr = ['实例编号', '实例名称']
-const needOptionsSetter = ['checkbox', 'radio']
+const needOptionsSetter = ['Checkbox', 'Radio', "Select"]
 
 export default defineComponent({
   components: {
     aTabs: Tabs,
     aTabPane: TabPane,
     InputSetter,
+    SelectSetter,
+    NumberSetter,
+    CheckboxSetter,
+    TextareaSetter,
+    RadioSetter,
+    ColorSetter,
   },
   props: {
     activatedNodeData: {
@@ -173,7 +179,7 @@ export default defineComponent({
         }
         const validArr = options.filter(item => /^\[.*\]$/.test(item))
         const defaultValue = validArr.map(item => item.substring(1, item.length - 1))
-        return attr.dataName === 'radio' ? defaultValue[0] : defaultValue
+        return attr.dataName === 'Radio' ? defaultValue[0] : defaultValue
       }
       return attr.attributeInstanceValue || ''
     }
@@ -181,25 +187,21 @@ export default defineComponent({
     const render = () => {
       const { attrData } = props.activatedNodeData
       return (
-        <div class="attribute-panel" style="width: calc(20% - 20px);padding-bottom: 10px;">
+        <div class="attribute-panel" style="width: calc(20% - 40px);padding-bottom: 10px;">
           <a-tabs style="height: 100%;overflow-y: auto;">
             <a-tab-pane tab="数据" key="1" style="padding: 0 10px;">
               {props.activatedNodeData?.id &&
                 attrData.map((item: NodeAttr, index: number) => {
                   if (excludeAttr.includes(item.attributeName) || !item.dataName) return ''
-                  return h(`${item.dataName}Setter`, {
-                    props: {
-                      ...item,
-                      attrData,
-                      label: item.attributeName,
-                      value: getValue(item),
-                      options: getOptions(item),
-                      readonlyBol: props.readonlyBol,
-                    },
-                    on: {
-                      change: (data: any) => {
-                        handleDataAttrChange(data, index)
-                      }
+                  return h(eval(`${item.dataName}Setter`), {
+                    ...item,
+                    attrData,
+                    label: item.attributeName,
+                    value: getValue(item),
+                    options: getOptions(item),
+                    readonlyBol: props.readonlyBol,
+                    onUpdate: (data: any) => {
+                      handleDataAttrChange(data, index)
                     }
                   })
                 })
